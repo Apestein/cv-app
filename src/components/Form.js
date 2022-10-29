@@ -1,4 +1,11 @@
 import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  solid,
+  regular,
+  brands,
+  icon,
+} from "@fortawesome/fontawesome-svg-core/import.macro"
 
 function Form(props) {
   const { handleChange, handleDelete, handleAdd, education, experience } = props
@@ -84,6 +91,8 @@ function Form(props) {
               <button onClick={(e) => handleDelete(edu.id, e)} name="education">
                 Delete
               </button>
+              <FontAwesomeIcon icon="fa-solid fa-trash" />
+              <FontAwesomeIcon icon={solid("user-secret")} />
             </section>
           )
         })}

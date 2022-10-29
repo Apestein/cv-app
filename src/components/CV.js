@@ -7,8 +7,10 @@ function CV(props) {
       <section>
         <h2>Description</h2>
         <p>
-          First Name:{fname} Last Name:{lname} Email:{email} Phone Number:
-          {number}
+          First Name: {fname}
+          Last Name: {lname}
+          Email: {email}
+          Phone Number: {number}
         </p>
       </section>
       <section>
@@ -17,9 +19,10 @@ function CV(props) {
           const { schoolName, titleOfStudy, eduFrom, eduTo } = edu
           return (
             <p key={edu.id}>
-              School Name:{schoolName} Title of Study:{titleOfStudy} From:
-              {eduFrom}
-              To:{eduTo}
+              School Name: {schoolName}
+              Title of Study: {titleOfStudy}
+              From: {eduFrom}
+              To: {eduTo}
             </p>
           )
         })}
@@ -30,7 +33,10 @@ function CV(props) {
           const { companyName, titleOfJob, jobFrom, jobTo, jobDuty } = exp
           return (
             <p key={exp.id}>
-              Company:{companyName} Title:{titleOfJob} From:{jobFrom} To:{jobTo}{" "}
+              Company: {companyName}
+              Title: {titleOfJob}
+              From: {jobFrom}
+              To: {jobTo}
               Job Description: {jobDuty}
             </p>
           )
