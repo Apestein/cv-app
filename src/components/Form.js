@@ -88,17 +88,19 @@ function Form(props) {
                   type="date"
                 />
               </label>
-              <button onClick={(e) => handleDelete(edu.id, e)} name="education">
-                Delete
-              </button>
-              <FontAwesomeIcon icon="fa-solid fa-trash" />
-              <FontAwesomeIcon icon={solid("user-secret")} />
+              <FontAwesomeIcon
+                onClick={() => handleDelete(edu.id, "education")}
+                icon={solid("trash")}
+                size="2x"
+              />
             </section>
           )
         })}
-        <button onClick={handleAdd} type="button" name="education">
-          Add
-        </button>
+        <FontAwesomeIcon
+          onClick={() => handleAdd("education")}
+          icon={solid("plus")}
+          size="2x"
+        />
       </fieldset>
 
       <fieldset>
@@ -148,18 +150,19 @@ function Form(props) {
                 name="jobDuty"
                 placeholder="Describe your duties"
               />
-              <button
-                onClick={(e) => handleDelete(exp.id, e)}
-                name="experience"
-              >
-                Delete
-              </button>
+              <FontAwesomeIcon
+                onClick={() => handleDelete(exp.id, "experience")}
+                icon={solid("trash")}
+                size="2x"
+              />
             </section>
           )
         })}
-        <button onClick={handleAdd} type="button" name="experience">
-          Add
-        </button>
+        <FontAwesomeIcon
+          onClick={() => handleAdd("experience")}
+          icon={solid("plus")}
+          size="2x"
+        />
       </fieldset>
     </form>
   )

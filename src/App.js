@@ -58,15 +58,13 @@ class App extends Component {
       })
   }
 
-  handleDelete(id, e) {
-    const name = e.target.name
+  handleDelete(id, name) {
     this.setState({
       [name]: this.state[name].filter((element) => element.id != id),
     })
   }
 
-  handleAdd(e) {
-    const name = e.target.name
+  handleAdd(name) {
     const eduTemplate = {
       schoolName: "",
       titleOfStudy: "",
