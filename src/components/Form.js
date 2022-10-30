@@ -6,6 +6,7 @@ import {
   brands,
   icon,
 } from "@fortawesome/fontawesome-svg-core/import.macro"
+import "../styles/Form.css"
 
 function Form(props) {
   const { handleChange, handleDelete, handleAdd, education, experience } = props
@@ -14,37 +15,51 @@ function Form(props) {
       <fieldset>
         <legend>General Information</legend>
         <label>
-          First Name:{" "}
           <input
             onChange={(e) => handleChange(null, e)}
             name="fname"
             type="text"
+            placeholder="First Name"
           />
         </label>
         <label>
-          Last Name:{" "}
           <input
             onChange={(e) => handleChange(null, e)}
             name="lname"
             type="text"
+            placeholder="Last Name"
           />
         </label>
         <label>
-          Email:{" "}
           <input
             onChange={(e) => handleChange(null, e)}
             name="email"
             type="email"
+            placeholder="Email"
           />
         </label>
         <label>
-          Phone Number:{" "}
           <input
             onChange={(e) => handleChange(null, e)}
             name="number"
             type="tel"
+            placeholder="Phone Number"
           />
         </label>
+        <label>
+          <input
+            onChange={(e) => handleChange(null, e)}
+            name="social"
+            type="text"
+            placeholder="Github"
+          />
+        </label>
+        <textarea
+          onChange={(e) => handleChange(null, e)}
+          name="about"
+          type="text"
+          placeholder="About yourself"
+        />
       </fieldset>
 
       <fieldset>
@@ -53,39 +68,39 @@ function Form(props) {
           return (
             <section key={edu.id}>
               <label>
-                School Name:{" "}
                 <input
                   onChange={(e) => handleChange(edu.id, e)}
                   data="edu"
                   name="schoolName"
                   type="text"
+                  placeholder="School Name"
                 />
               </label>
               <label>
-                Title of Study:{" "}
                 <input
                   onChange={(e) => handleChange(edu.id, e)}
                   data="edu"
                   name="titleOfStudy"
                   type="text"
+                  placeholder="Title of Study"
                 />
               </label>
               <label>
-                From:{" "}
                 <input
                   onChange={(e) => handleChange(edu.id, e)}
                   data="edu"
                   name="eduFrom"
-                  type="date"
+                  type="text"
+                  placeholder="From"
                 />
               </label>
               <label>
-                To:{" "}
                 <input
                   onChange={(e) => handleChange(edu.id, e)}
                   data="edu"
                   name="eduTo"
-                  type="date"
+                  type="text"
+                  placeholder="To"
                 />
               </label>
               <FontAwesomeIcon
@@ -109,39 +124,39 @@ function Form(props) {
           return (
             <section key={exp.id}>
               <label>
-                Company:{" "}
                 <input
                   onChange={(e) => handleChange(exp.id, e)}
                   data="exp"
                   name="companyName"
                   type="text"
+                  placeholder="Company"
                 />
               </label>
               <label>
-                Position Title:{" "}
                 <input
                   onChange={(e) => handleChange(exp.id, e)}
                   data="exp"
                   name="titleOfJob"
                   type="text"
+                  placeholder="Position Title"
                 />
               </label>
               <label>
-                From:{" "}
                 <input
                   onChange={(e) => handleChange(exp.id, e)}
                   data="exp"
                   name="jobFrom"
-                  type="date"
+                  type="text"
+                  placeholder="From"
                 />
               </label>
               <label>
-                To:{" "}
                 <input
                   onChange={(e) => handleChange(exp.id, e)}
                   data="exp"
                   name="jobTo"
-                  type="date"
+                  type="text"
+                  placeholder="To"
                 />
               </label>
               <textarea

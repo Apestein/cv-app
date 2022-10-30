@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Form from "./components/Form"
 import CV from "./components/CV"
 import uniqid from "uniqid"
+import "./styles/App.css"
 
 class App extends Component {
   constructor() {
@@ -12,6 +13,8 @@ class App extends Component {
       lname: "",
       email: "",
       number: "",
+      social: "",
+      about: "",
       education: [
         {
           schoolName: "",
@@ -89,7 +92,9 @@ class App extends Component {
   render() {
     return (
       <>
-        <header></header>
+        <header>
+          <h1>CV Creator</h1>
+        </header>
         <main>
           <Form
             handleChange={this.handleChange}
@@ -100,7 +105,7 @@ class App extends Component {
           />
           <CV {...this.state} />
         </main>
-        <footer></footer>
+        <footer>Copyright © 2022 Anon</footer>
       </>
     )
   }

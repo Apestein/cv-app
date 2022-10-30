@@ -1,0 +1,19 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+fieldset {
+  padding: 10px;
+}
+fieldset,
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input,
+textarea {
+  width: 100%;
+  font-size: large;
+}

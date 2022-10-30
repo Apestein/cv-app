@@ -1,0 +1,9 @@
+article {
+  outline: 1px solid black;
+  padding: 50px;
+}
+.contact,
+.edu {
+  display: flex;
+  justify-content: space-between;
+}
