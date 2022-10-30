@@ -1,9 +1,26 @@
 article {
   outline: 1px solid black;
-  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  box-shadow: 5px 5px 5px;
+}
+.basic-info {
+  background-color: #1d3557;
+  color: #edf6f9;
+  padding: 10px 25px;
+}
+.about,
+.edu,
+.exp {
+  padding: 25px 25px;
+  border-bottom: 1px dotted #1d355725;
+}
+h2 {
+  font-size: 2.5rem;
 }
 .contact,
-.edu {
+.list-item {
   display: flex;
   justify-content: space-between;
 }

@@ -5,6 +5,7 @@ form {
 }
 fieldset {
   padding: 10px;
+  box-shadow: 5px 5px 5px;
 }
 fieldset,
 section {
@@ -15,5 +16,12 @@ section {
 input,
 textarea {
   width: 100%;
+  font-size: 1rem;
+}
+legend {
+  font-weight: bold;
   font-size: large;
+}
+.icon:hover {
+  transform: scale(1.3);
 }

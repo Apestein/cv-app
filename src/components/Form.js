@@ -107,6 +107,7 @@ function Form(props) {
                 onClick={() => handleDelete(edu.id, "education")}
                 icon={solid("trash")}
                 size="2x"
+                className="icon"
               />
             </section>
           )
@@ -115,6 +116,7 @@ function Form(props) {
           onClick={() => handleAdd("education")}
           icon={solid("plus")}
           size="2x"
+          className="icon"
         />
       </fieldset>
 
@@ -169,6 +171,7 @@ function Form(props) {
                 onClick={() => handleDelete(exp.id, "experience")}
                 icon={solid("trash")}
                 size="2x"
+                className="icon"
               />
             </section>
           )
@@ -177,6 +180,7 @@ function Form(props) {
           onClick={() => handleAdd("experience")}
           icon={solid("plus")}
           size="2x"
+          className="icon"
         />
       </fieldset>
     </form>

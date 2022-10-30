@@ -9,28 +9,29 @@ class App extends Component {
     super()
 
     this.state = {
-      fname: "",
-      lname: "",
-      email: "",
-      number: "",
-      social: "",
-      about: "",
+      fname: "Luke",
+      lname: "Skywalker",
+      email: "lukeskywalker@gmail.com",
+      number: "000-111-2222",
+      social: "@github.com/skywalker",
+      about:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus imperdiet nisl sed vestibulum. Donec gravida, nulla eget blandit fermentum, mauris nisi rutrum libero, ac pharetra erat est sit amet tellus. Quisque fermentum dolor a interdum fermentum. Maecenas vehicula ac ipsum nec gravida. Integer quis porta turpis. Aenean et metus.",
       education: [
         {
-          schoolName: "",
-          titleOfStudy: "",
-          eduFrom: "",
-          eduTo: "",
+          schoolName: "Jedi Academy",
+          titleOfStudy: "Jedi Master",
+          eduFrom: "9969",
+          eduTo: "9976",
           id: uniqid(),
         },
       ],
       experience: [
         {
-          companyName: "",
-          titleOfJob: "",
-          jobFrom: "",
-          jobTo: "",
-          jobDuty: "",
+          companyName: "The Resistance",
+          titleOfJob: "The Chosen One",
+          jobFrom: "9977",
+          jobTo: "9979",
+          jobDuty: "Bring balance to the force",
           id: uniqid(),
         },
       ],
