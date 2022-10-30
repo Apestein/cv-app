@@ -22,6 +22,9 @@ legend {
   font-weight: bold;
   font-size: large;
 }
+.icon {
+  align-self: center;
+}
 .icon:hover {
   transform: scale(1.3);
 }
